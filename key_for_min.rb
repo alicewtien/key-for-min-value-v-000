@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   if array[0][1] <=> array[1][1] || array[1][1] <=> array[2][1]
     then smallest = array.shift
   end
-  array
+  smallest
 
 
 
