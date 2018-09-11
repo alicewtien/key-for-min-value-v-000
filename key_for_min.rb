@@ -10,6 +10,7 @@ def key_for_min_value(name_hash)
       array.shift
     else
       array.pop
+    end
   end
   array
 end
