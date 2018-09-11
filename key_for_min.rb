@@ -4,12 +4,16 @@
 def key_for_min_value(name_hash)
   array = name_hash.to_a
   while array.length > 1
-    if array[0][1] > array[1][1]
-    array.shift
+    if array[2][1] > array[1][1]
+      array.pop
+    elsif array[0][1] > array[1][1]
+      array.shift
+    else
+      array.pop
   end
   array
-  
- 
+
+
 
 
 end
