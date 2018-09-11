@@ -4,10 +4,15 @@
 def key_for_min_value(name_hash)
   array = name_hash.to_a
   smallest = []
-  if array[0][1] <=> array[1][1] || array[1][1] <=> array[2][1]
-    then smallest = array.shift
+  array.each do |set|
+    if set[0][1] > set[1][1]
+      array.shift
+    elsif set[1][1] < set[2][1]
+      array.pop
+    else
+      smallest = set[0]
   end
-  smallest
+  smallest[0]
 
 
 
