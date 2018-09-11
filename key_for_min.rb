@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   array = name_hash.to_a
-  #min = []
+  min = []
   array.each do |set|
     set[0] <=> set[1]
     min << set[0]
