@@ -7,4 +7,5 @@ def key_for_min_value(name_hash)
     set[1] <=> set[2]
     set[0] <=> set[1]
   end
+  array[0]
 end
