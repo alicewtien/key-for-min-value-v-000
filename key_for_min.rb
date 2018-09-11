@@ -8,7 +8,9 @@ def key_for_min_value(name_hash)
     set.each do |item|
       if item[1].to_i > item[3].to_i
         smallest[0] = item[0]
-      elsif smallest = item[2]
+      else 
+        smallest = item[2]
+      end
     end
   end
   smallest[0]
