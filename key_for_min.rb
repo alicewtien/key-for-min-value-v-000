@@ -11,6 +11,7 @@ def key_for_min_value(name_hash)
       array.pop
     else
       smallest = set[0]
+    end
   end
   smallest[0]
 
