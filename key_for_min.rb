@@ -6,7 +6,6 @@ def key_for_min_value(name_hash)
   min = []
   array.each do |set|
     set[1] <=> set[2]
-    set[2].pop
     set[1] <=> set[2]
     min << set[1]
   end
