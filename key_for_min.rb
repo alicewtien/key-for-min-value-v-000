@@ -6,5 +6,5 @@ def key_for_min_value(name_hash)
   smallest = []
   if array[0][1] < array[1][1]
   smallest << array[0]
-  smallest
+  smallest[0][0]
 end
