@@ -4,11 +4,11 @@
 def key_for_min_value(name_hash)
   array = name_hash.to_a
   array.map do |set|
-    if set[1] < set[2]
+    if set[1[1]] < set[2[1]]
       -1
-    elsif set[0] < set[1]
+    elsif set[0[1]] < set[1[1]]
       -1
     end
   end
-  array[0]
+  array[0[0]]
 end
