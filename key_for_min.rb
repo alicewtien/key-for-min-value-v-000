@@ -4,7 +4,9 @@
 def key_for_min_value(name_hash)
   array = name_hash.to_a
   min_key = []
-  array.max.index
+  if array[1][1] > array[0][1] && array[1][1] > array[2][1]
+    array.delet[1]
+    
 
   end
 
