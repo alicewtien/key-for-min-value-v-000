@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   array.each do |set|
     if set[0][1] > set[1][1]
       array.shift
-    elsif set[1][1] < set[2][1]
+    elsif set[0][1] < set[1][1]
       array.pop
     else
       smallest = set[0]
