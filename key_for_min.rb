@@ -8,7 +8,6 @@ def key_for_min_value(name_hash)
       -1
     elsif set[0] < set[1]
       -1
-
   end
   array[0]
 end
