@@ -5,8 +5,8 @@ def key_for_min_value(name_hash)
   array = name_hash.to_a
   #min_key = []
   array.map do |set|
-    set[1] <=> set[2]
-    set[0] <=> set[1]
+    set[1][1] <=> set[2][1]
+    set[0][1] <=> set[1][1]
   end
 
   #min_key
