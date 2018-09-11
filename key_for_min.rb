@@ -5,10 +5,11 @@ def key_for_min_value(name_hash)
   array = name_hash.to_a
   smallest = []
   array.each do |set|
-    if set[0][1].to_i > set[1][1].to_i
-      set[0].shift
-      smallest << set[0]
+    set.each do |item|
+      if item[1].to_i > item[3].to_i
+        smallest[0] = item[0]
+      elsif smallest = item[2]
     end
   end
-  smallest[0][0]
+  smallest[0]
 end
