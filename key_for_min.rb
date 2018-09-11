@@ -8,10 +8,8 @@ def key_for_min_value(name_hash)
     min_key = array.delete_at(1)
   elsif array[0][1] < array[1][1] && array[0][1] < array[2][1]
     min_key = array.shift
-  elsif array[2][1] < array[1][1] && array[2][1] < array[0][1]
-    min_key = array.pop
   else
-    nil
+    min_key = array.pop
   end
   min_key[0]
 end
