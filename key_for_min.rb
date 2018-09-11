@@ -3,14 +3,11 @@
 
 def key_for_min_value(name_hash)
   array = name_hash.to_a
-  smallest = []
   if array[2][1] > array[0][1]
     array.pop
   elsif array[0][1] > array[2][1]
     array.shift
   else array[1][1] < array[2][1] || array[1][1] < array[0][1]
-    smallest = array[1]
+    array[1][1]
   end
-
-  smallest[0]
 end
