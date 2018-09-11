@@ -3,7 +3,8 @@
 
 def key_for_min_value(name_hash)
   array = name_hash.to_a
-  if array[0][1] <=> array[1][1] == 1
+  place = []
+  if array[0][1] <=> array[1][1]  1
     then array[0].shift
   end
   array
