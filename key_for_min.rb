@@ -8,5 +8,6 @@ def key_for_min_value(name_hash)
     if set[0[1]] > set[1[1]]
       set[0].shift
     end
-    array[0[0]]
+  end
+  array[0[0]]
 end
