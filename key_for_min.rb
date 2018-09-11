@@ -3,9 +3,10 @@
 
 def key_for_min_value(name_hash)
   array = name_hash.to_a
-  place = []
-  if array[0][1] <=> array[1][1]
+  if array[0][1] > array[1][1]
     then array.shift
+  elsif array[2][1] > array[1][1]
+    then array.pop
   end
   array
 
