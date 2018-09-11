@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   #smallest = []
   array.each do |set|
     set.each do |item|
-      item
+      item[0]
     end
   end
 end
